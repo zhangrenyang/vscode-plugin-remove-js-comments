@@ -2,10 +2,15 @@
 	"name": "vscode-plugin-remove-js-comments",
 	"displayName": "remove-js-comments",
 	"description": "remove-js-comments",
-	"keywords": ["vscode", "plugin", "comments"],
-	"version": "0.0.4",
+	"keywords": [
+		"vscode",
+		"plugin",
+		"comments"
+	],
+	"version": "0.0.5",
 	"publisher": "zhangrenyang",
-	"repository":"https://github.com/zhangrenyang/vscode-plugin-remove-js-comments",
+	"icon": "images/icon.png",
+	"repository": "https://github.com/zhangrenyang/vscode-plugin-remove-js-comments",
 	"engines": {
 		"vscode": "^1.49.0"
 	},
@@ -63,14 +68,20 @@
 		"test": "node ./test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.49.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.0",
 		"@types/node": "^14.0.27",
+		"@types/vscode": "^1.49.0",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^7.9.0",
 		"glob": "^7.1.6",
 		"mocha": "^8.1.3",
 		"typescript": "^4.0.2",
 		"vscode-test": "^1.4.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
