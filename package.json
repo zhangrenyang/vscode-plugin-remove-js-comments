@@ -7,7 +7,7 @@
 		"plugin",
 		"comments"
 	],
-	"version": "0.0.5",
+	"version": "0.1.0",
 	"publisher": "zhangrenyang",
 	"icon": "images/icon.png",
 	"repository": "https://github.com/zhangrenyang/vscode-plugin-remove-js-comments",
@@ -18,7 +18,7 @@
 		"Formatters"
 	],
 	"activationEvents": [
-		"onCommand:vscode-plugin-remove-comments.removeJSComments"
+		"onCommand:vscode-plugin-remove-js-comments.removeJSComments"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -26,12 +26,12 @@
 			"type": "object",
 			"title": "vscode-plugin-remove-js-comments",
 			"properties": {
-				"vscode-plugin-remove-comments.yourName": {
+				"vscode-plugin-remove-js-comments.yourName": {
 					"type": "string",
 					"default": "guest",
 					"description": "张仁阳"
 				},
-				"vscode-plugin-remove-comments.showTip": {
+				"vscode-plugin-remove-js-comments.showTip": {
 					"type": "boolean",
 					"default": true,
 					"description": "remove-js-comments"
@@ -40,13 +40,13 @@
 		},
 		"commands": [
 			{
-				"command": "vscode-plugin-remove-comments.removeJSComments",
+				"command": "vscode-plugin-remove-js-comments.removeJSComments",
 				"title": "remove-js-comments"
 			}
 		],
 		"keybindings": [
 			{
-				"command": "vscode-plugin-remove-comments.removeJSComments",
+				"command": "vscode-plugin-remove-js-comments.removeJSComments",
 				"key": "ctrl+f10",
 				"mac": "cmd+f10",
 				"when": "editorTextFocus"
@@ -56,8 +56,8 @@
 			"editor/context": [
 				{
 					"when": "editorFocus",
-					"command": "vscode-plugin-remove-comments.removeJSComments",
-					"group": "navigation@2"
+					"command": "vscode-plugin-remove-js-comments.removeJSComments",
+					"group": "navigation"
 				}
 			]
 		}
