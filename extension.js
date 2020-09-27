@@ -6,6 +6,7 @@ function activate(context) {
 			text=text.replace(/((\/\*([\w\W]+?)\*\/)|(\/\/(.(?!"\)))+)|(^\s*(?=\r?$)\n))/gm,'').replace(/(^\s*(?=\r?$)\n)/gm,'').replace(/\\n\\n\?/gm,'');
 			const end = new vscode.Position(vscode.window.activeTextEditor.document.lineCount + 1, 0);
 			editBuilder.replace(new vscode.Range(new vscode.Position(0, 0), end), text);
+			vscode.commands.executeCommand(`editor.action.formatDocument`);
 			vscode.window.activeTextEditor;
 		});
 	});
