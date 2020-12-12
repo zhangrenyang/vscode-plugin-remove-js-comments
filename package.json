@@ -9,8 +9,11 @@
 	],
 	"version": "0.0.1",
 	"publisher": "zhangrenyang",
-	"icon": "https://img.zhufengpeixun.com/clean.png",
-	"repository": "https://github.com/zhangrenyang/rm-js-comment",
+	"icon": "images/icon.png",
+	"repository": {
+		"type":"git",
+		"url": "https://github.com/zhangrenyang/rm-js-comment"
+	},
 	"engines": {
 		"vscode": "^1.49.0"
 	},
