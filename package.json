@@ -1,16 +1,17 @@
 {
-	"name": "vscode-plugin-remove-js-comments",
-	"displayName": "remove-js-comments",
-	"description": "remove-js-comments",
+	"name": "rm-js-comment",
+	"displayName": "rm-js-comment",
+	"description": "rm-js-comment",
 	"keywords": [
+		"rm",
 		"vscode",
 		"plugin",
 		"comments"
 	],
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher": "zhangrenyang",
 	"icon": "images/icon.png",
-	"repository": "https://github.com/zhangrenyang/vscode-plugin-remove-js-comments",
+	"repository": "https://github.com/zhangrenyang/rm-js-comment",
 	"engines": {
 		"vscode": "^1.49.0"
 	},
@@ -18,35 +19,35 @@
 		"Formatters"
 	],
 	"activationEvents": [
-		"onCommand:vscode-plugin-remove-js-comments.removeJSComments"
+		"onCommand:rm-js-comment.removeJsComment"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"configuration": {
 			"type": "object",
-			"title": "vscode-plugin-remove-js-comments",
+			"title": "rm-js-comment",
 			"properties": {
-				"vscode-plugin-remove-js-comments.yourName": {
+				"rm-js-comment.yourName": {
 					"type": "string",
 					"default": "guest",
 					"description": "张仁阳"
 				},
-				"vscode-plugin-remove-js-comments.showTip": {
+				"rm-js-comment.showTip": {
 					"type": "boolean",
 					"default": true,
-					"description": "remove-js-comments"
+					"description": "rm-js-comment"
 				}
 			}
 		},
 		"commands": [
 			{
-				"command": "vscode-plugin-remove-js-comments.removeJSComments",
+				"command": "rm-js-comment.removeJsComment",
 				"title": "remove-js-comments"
 			}
 		],
 		"keybindings": [
 			{
-				"command": "vscode-plugin-remove-js-comments.removeJSComments",
+				"command": "rm-js-comment.removeJsComment",
 				"key": "ctrl+f10",
 				"mac": "cmd+f10",
 				"when": "editorTextFocus"
@@ -56,7 +57,7 @@
 			"editor/context": [
 				{
 					"when": "editorFocus",
-					"command": "vscode-plugin-remove-js-comments.removeJSComments",
+					"command": "rm-js-comment.removeJsComment",
 					"group": "navigation"
 				}
 			]
